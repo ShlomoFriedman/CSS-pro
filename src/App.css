@@ -1,0 +1,468 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+
+.app-navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust height as needed */
+  background-color: #f0f0f0; /* Adjust background color as desired */
+}
+
+.app-navbar img {
+  width: auto;
+  height: 71px;
+  flex-shrink: 0;
+}
+
+.app-navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 50px;
+  margin: 0;
+}
+
+.app-navbar ul li {
+  margin: 0 15px;
+  color: #000;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.app-navbar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.app-navbar ul li a:hover {
+  color: #ff8c00;
+}
+
+
+
+
+/* Main content styling */
+.app-main-hero {
+  background-color: #495E57;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 3fr 1.5fr;
+  grid-auto-rows: 7;
+  grid-gap: 0px;
+}
+
+.app-main-hero h1 {
+  grid-column: 2 / 2;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #F4CE14;
+  font-family: "Markazi Text";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.app-main-hero h2 {
+  grid-column: 2 / 2;
+  margin-top: 0px;
+  margin-bottom: 75px;
+  color: #FFF;
+  font-family: "Markazi Text";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.app-main-hero p {
+  grid-column: 2 / 2;
+  max-width: 750px;
+  margin: 0;
+  color: #FFF;
+  font-family: "Open-sans";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.app-main-hero .button-container {
+  grid-column: 2 / 2;
+}
+
+.app-main-hero button {
+  grid-column: 2 / 2;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #1E1E1E;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: start;
+  backface-visibility: hidden;
+  background-color: #F4CE14;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  width: 227px;
+  height: 69px;
+  flex-shrink: 0;
+}
+
+
+
+
+.app-main-hero button:hover {
+  background-color: #ff8c00; /* Darker background color on hover */
+}
+
+.app-main-hero img {
+  grid-column: 3 / 3;
+  grid-row: 2 / 6;
+  align-self: center;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+
+.app-main-highlights {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.app-main-highlights h1 {
+  grid-column: 2 / 4;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #000;
+  font-family: "Markazi Text";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.app-main-highlights article {
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.app-main-highlights article > h3 {
+  color: #000;
+  font-family: "Open-sans";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.app-main-highlights article > p {
+  color: #4B4B4B;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 10px;
+}
+
+.app-main-highlights article > h4 {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.app-main-highlights .meal1{
+  grid-column: 2/2;
+  background-color: #E8E8E8;;
+  justify-self: center;
+  align-items: center;
+  width: 255.717px;
+  height: 396.918px;
+  flex-shrink: 0;
+}
+
+.app-main-highlights .meal2{
+  grid-column: 3/3;
+  background-color: #E8E8E8;;
+  justify-self: center;
+  align-items: center;
+  width: 255.717px;
+  height: 396.918px;
+  flex-shrink: 0;
+}
+
+.app-main-highlights .meal3{
+  grid-column: 4/4;
+  background-color: #E8E8E8;;
+  justify-self: center;
+  align-items: center;
+  width: 255.717px;
+  height: 396.918px;
+  flex-shrink: 0;
+}
+
+.app-main-highlights button {
+  grid-row: 1;
+  grid-column: 4;
+  justify-self: center;
+  align-self: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #1E1E1E;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: start;
+  backface-visibility: hidden;
+  background-color: #F4CE14;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  width: 227px;
+  height: 69px;
+  flex-shrink: 0;
+}
+
+.app-main-highlights button:hover {
+  background-color: #ff8c00; /* Darker background color on hover */
+}
+
+
+
+.app-main-testimonials {
+  background-image: url('/public/restaurant2.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover; /* Adjust as needed: 'cover', 'contain', or specific dimensions */
+  background-position: center center; /* Adjust as needed */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.app-main-testimonials h1 {
+  grid-row: 1;
+  grid-column: 2 / 6;
+  color: #FFF;
+  justify-content: center;
+  text-align: center;
+  font-family: "Markazi Text";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.app-main-testimonials article {
+  grid-row: 2;
+  align-self: center;
+}
+
+.app-main-testimonials article > p {
+  color: #FFF;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 181px;
+  height: 71px;
+  flex-shrink: 0;
+}
+
+.app-main-testimonials article > h3 {
+  color: #FFF;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial-sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 166px;
+  height: 23px;
+  flex-shrink: 0;
+}
+
+.app-main-testimonials .jack {
+  grid-column: 2 / 2;
+  justify-self: center;
+}
+
+.app-main-testimonials .jack > img {
+  justify-self: center;
+}
+
+
+.app-main-testimonials .emily {
+  grid-column: 3 / 3;
+  justify-self: center;
+}
+
+.app-main-testimonials .sandra {
+  grid-column: 4 / 4;
+  justify-self: center;
+}
+
+.app-main-testimonials .carlos {
+  grid-column: 5 / 5;
+  justify-self: center;
+}
+
+.app-main-about {
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr 2fr;
+  grid-auto-rows: minmax(100px, auto);
+  margin-bottom: 10px;
+}
+
+.app-main-about h1 {
+  color: #000;
+  grid-column: 2;
+  font-family: "Markazi Text";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 180px;
+  height: 39px;
+  flex-shrink: 0;
+}
+
+.app-main-about p {
+  color: #000;
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.app-main-about .image-container {
+  grid-column: 3 / 4; /* Set the grid column for the image container */
+  grid-row: 1 / 1;
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-main-about .FDA,
+.app-main-about .Chicago {
+  max-width: 100%; /* Ensure images don't exceed the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.app-main-about .founders {
+  grid-column: 3 / 4;
+  grid-row: 2 / 2;
+  justify-self: center;
+}
+
+
+/* Footer styling */
+.app-footer {
+  background-color: #657870;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+}
+
+.app-footer img {
+  width: 75px; /* Adjust the size as needed */
+  height: 75px; /* Adjust the size as needed */
+  padding: 75px;
+}
+
+.app-footer ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.doormat.navigation,
+.contact,
+.social.media {
+  margin: 15px; /* Use the same margin for all classes */
+}
+
+.doormat.navigation a,
+.contact a,
+.social.media a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.doormat.navigation a:hover,
+.contact a:hover,
+.social.media a:hover {
+  color: #ff8c00; /* Change the color on hover */
+}
+
+.app-footer p {
+  margin-top: 20px; /* Adjust the top margin as needed */
+  width: 100%; /* Make sure the paragraph takes full width */
+  text-align: center; /* Center the text horizontally */
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.app-footer h1.menu-title {
+  color: #000000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
