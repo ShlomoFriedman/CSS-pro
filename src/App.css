@@ -10,19 +10,19 @@ body {
 
 /* Header styling */
 
+/* Base Navbar Styles */
 .navbar {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px; /* Adjust height as needed */
-  background-color: #f0f0f0; /* Adjust background color as desired */
+  height: 100px;
+  background-color: #f0f0f0;
 }
 
 .navbar img {
@@ -33,7 +33,7 @@ body {
 
 .navbar ul {
   display: flex;
-  list-style-type: none;
+  list-style: none;
   padding: 10px;
   margin: 50px;
 }
@@ -59,20 +59,73 @@ body {
 
 .navbar ul.Login li a {
   display: inline-block;
-  padding: 10px 20px; /* Adjust for desired size */
-  background-color: #007bff; /* Change to your preferred button color */
-  color: #ffffff; /* White text color */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
   text-align: center;
-  text-decoration: none; /* Remove underline */
-  border-radius: 5px; /* Rounded corners for the button */
-  border: none; /* No borders */
-  font-size: 16px; /* Adjust as needed */
-  font-weight: bold; /* Optional: Make text bold */
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .navbar ul.Login li a:hover {
-  background-color: #0056b3; /* Darker shade for hover effect */
+  background-color: #0056b3;
 }
+
+/* Hamburger Button Styles */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/* Media Query for Mobile Screens (up to 480px) */
+@media (max-width: 480px) {
+  .hamburger {
+    display: block; /* Show hamburger button */
+    margin-right: 10%;
+  }
+
+  .navbar-menu {
+    display: none; /* Hidden by default for mobile */
+  }
+
+  .navbar-menu.active {
+    display: block; /* Show entire menu on mobile */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stacks vertically */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f0f0f0; /* Ensure a visible background */
+  }
+
+  .navbar ul li {
+    margin: 15px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Main content styling */
 .hero {
@@ -168,8 +221,8 @@ body {
   grid-template-columns: 1.5fr 1.5fr 1.5fr;
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 90px;
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -338,8 +391,17 @@ body {
 .footer ul {
   list-style: none;
   padding: 0;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.footer ul li {
+  color: #000000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
 }
 
 .footer p {
@@ -348,7 +410,7 @@ body {
   text-align: center; /* Center the text horizontally */
   color: #000;
   font-family: Inter;
-  font-size: 10px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -363,4 +425,5 @@ body {
 }
 
 
-@media j
+
+
