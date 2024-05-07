@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className='app-main-about'>
+        <section className='about'>
             <h1>About us</h1>
             <div className='image-container'>
                 <img className='FDA' src='/FDA.svg' alt='FDA approval'></img>

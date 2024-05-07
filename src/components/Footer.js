@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className='app-footer'>
+        <footer className='footer'>
             <img src="/Little%20Lemon%20Logo%20Icon.svg" alt="Logo" />
             <ul className='doormat navigation'>
                 <li className='doormat navigation'><h1 className="menu-title">Doormat Navigation</h1></li>
